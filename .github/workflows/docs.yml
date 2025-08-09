@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - zh_CN
   pull_request:
     branches:
       - main
@@ -30,7 +31,7 @@ jobs:
         run: mkdocs build --clean
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' ||  github.ref == 'refs/heads/zh_CN'
         uses: peaceiris/actions-gh-pages@v3
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}

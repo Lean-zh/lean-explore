@@ -1,7 +1,7 @@
 site_name: LeanExplore
 site_description: LeanExplore Documentation
 site_author: Justin Asher
-site_url: https://www.leanexplore.com
+site_url: https://www.leanprover.cn/lean-explore
 
 repo_name: justincasher/lean-explore
 repo_url: https://github.com/justincasher/lean-explore
@@ -36,7 +36,7 @@ theme:
     - content.code.annotate
     - content.action.edit
     - content.action.view
-  language: en
+  language: zh
 
 plugins:
   - search
@@ -45,17 +45,18 @@ plugins:
       fallback_to_default: true
       reconfigure_material: true
       reconfigure_search: true
-      default_language: en
+      # default_language: zh
       languages:
         - locale: en
-          default: true
+          default: false
           name: English
           build: true
           site_name: "LeanExplore Documentation"
         - locale: zh
+          default: true
           name: 中文
           build: true
-          site_name: "LeanExplore文档 (zh)"
+          site_name: "LeanExplore 文档"
           nav_translations:
             Home: 首页
             Quickstart Guide: 快速入门指南
@@ -111,14 +112,14 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: /
+      link: /lean-explore/en/
       lang: en
     - name: 中文
-      link: /zh/
+      link: /lean-explore/
       lang: zh
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/justincasher
+      link: https://github.com/justincasher/lean-explore
 
 nav:
   - Home: index.md
