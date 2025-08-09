@@ -922,7 +922,7 @@
 <ul>
 <li><code>--backend {api|local}</code>（别名：<code>-b</code>）确定服务器工具的数据源：</li>
 <li><code>api</code>：工具将查询远程 LeanExplore API。<strong>先决条件：</strong> 必须配置有效的 LeanExplore API 密钥（通过 <code>leanexplore configure api-key</code>）或使用 <code>--api-key</code> 选项直接提供。此后端通常提供对最新数据的访问并卸载计算。</li>
-<li><code>local</code>：工具将使用您本地下载的数据资产（SQLite 数据库、FAISS 索引）。<strong>先决条件：</strong> 您必须首先使用 <code>leanexplore data fetch</code> 下载数据工具链。此后端允许离线使用并完全控制数据版本。</li>
+<li><code>local</code>：工具将使用您本地下载的数据资源（SQLite 数据库、FAISS 索引）。<strong>先决条件：</strong> 您必须首先使用 <code>leanexplore data fetch</code> 下载数据工具链。此后端允许离线使用并完全控制数据版本。</li>
 <li><code>--api-key TEXT</code>（可选）如果使用 <code>--backend api</code>，此选项允许您直接为当前服务器会话提供 LeanExplore API 密钥，覆盖任何全局配置的密钥。</li>
 <li><code>--log-level {DEBUG|INFO|WARNING|ERROR|CRITICAL}</code> 设置服务器的日志记录详细程度。使用 <code>DEBUG</code> 有助于故障排除。默认通常是 <code>ERROR</code> 或 <code>WARNING</code> 以最小化噪音。</li>
 </ul>
@@ -940,7 +940,7 @@
 <li><code>range_start_line: integer</code> - 语句组在源文件中的起始行号。</li>
 <li><code>statement_text: string</code> - 语句组的完整规范 Lean 代码文本。</li>
 <li><code>docstring: string | null</code> - 与语句组关联的文档字符串（如果可用）。</li>
-<li><code>informal_description: string | null</code> - 非正式的、人类可读的描述（如果可用）。</li>
+<li><code>informal_description: string | null</code> - 非形式的、人类可读的描述（如果可用）。</li>
 </ul>
 <h3 id="search">工具：<code>search</code></h3>
 <ul>

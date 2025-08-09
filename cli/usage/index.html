@@ -605,7 +605,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      理解关键聊天选项
+      关键聊天选项
     </span>
   </a>
   
@@ -842,7 +842,7 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      理解关键聊天选项
+      关键聊天选项
     </span>
   </a>
   
@@ -919,7 +919,7 @@
 
 
 <h1 id="leanexplore-cli">使用 LeanExplore CLI</h1>
-<p>LeanExplore 命令行界面 (CLI)，使用 <code>leanexplore</code> 命令调用，是您与 LeanExplore 生态系统交互的主要工具。它使您能够配置设置、管理本地数据、直接搜索 LeanExplore API、使用 AI 助手探索代码，以及控制模型上下文协议 (MCP) 服务器以进行更高级的集成。</p>
+<p>LeanExplore 命令行界面 (CLI) 通过 <code>leanexplore</code> 命令调用，是您与 LeanExplore 生态系统交互的主要工具。它使您能够配置设置、管理本地数据、直接搜索 LeanExplore API、使用 AI 助手探索代码，以及控制模型上下文协议 (MCP) 服务器以进行更高级的集成。</p>
 <h2 id="_1">目录</h2>
 <ul>
 <li><a href="#使用-leanexplore-cli">使用 LeanExplore CLI</a></li>
@@ -938,7 +938,7 @@
 </li>
 <li><a href="#使用-ai-聊天助手进行交互式探索">使用 AI 聊天助手进行交互式探索</a><ul>
 <li><a href="#启动聊天会话">启动聊天会话</a></li>
-<li><a href="#理解关键聊天选项">理解关键聊天选项</a></li>
+<li><a href="#关键聊天选项">关键聊天选项</a></li>
 </ul>
 </li>
 <li><a href="#通过-mcp-服务器与-ai-代理集成">通过 MCP 服务器与 AI 代理集成</a><ul>
@@ -963,7 +963,7 @@
 <p>您可以从 <a href="https://www.leanexplore.com/api-keys">https://www.leanexplore.com/api-keys</a> 获取您的 LeanExplore API 密钥。一旦您有了它，通过运行以下命令配置它：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>leanexplore<span class="w"> </span>configure<span class="w"> </span>api-key
 </code></pre></div>
-<p>系统将提示您输入密钥。这通常是一次性设置。</p>
+<p>系统将提示您输入密钥，通常只需设置一次。</p>
 <p><strong>OpenAI API 密钥：</strong> 如果您计划使用 AI 驱动的聊天功能（<code>leanexplore chat</code>），您还需要一个 OpenAI API 密钥。使用以下命令配置它：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>leanexplore<span class="w"> </span>configure<span class="w"> </span>openai-key
 </code></pre></div>
@@ -976,7 +976,7 @@
 <p>此命令获取 SQLite 数据库（包含 Lean 项目信息）、用于语义搜索的 FAISS 搜索索引以及相关的映射文件。这些安装到本地目录中，通常在 <code>~/.lean_explore/data/toolchains/</code> 内。</p>
 <p><strong>注意：</strong> 数据工具链可能有几个 GB。根据您的互联网连接，初始下载可能需要一些时间。此步骤是使用依赖本地后端的功能的先决条件，例如 <code>leanexplore chat --backend local</code> 或 <code>leanexplore mcp serve --backend local</code>。</p>
 <h2 id="lean-api">查找和检查 Lean 代码（通过 API）</h2>
-<p>一旦配置了您的 LeanExplore API 密钥，您就可以直接查询远程 API 来查找和检查 Lean 语句。这些命令提供对 LeanExplore 索引的丰富信息的快速访问。</p>
+<p>一旦配置了 LeanExplore API 密钥，您可以直接查询远程 API 来查找和检查 Lean 语句。这些命令提供对 LeanExplore 索引数据的快速访问。</p>
 <h3 id="lean">搜索 Lean 语句</h3>
 <p>要基于自然语言查询搜索 Lean 语句组，请使用 <code>leanexplore search</code> 命令：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>leanexplore<span class="w"> </span>search<span class="w"> </span><span class="s2">&quot;your query string here&quot;</span><span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -998,7 +998,7 @@
 <p>例如：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>leanexplore<span class="w"> </span>get<span class="w"> </span><span class="m">12345</span>
 </code></pre></div>
-<p>这显示了组的全面信息，例如其完整的语句文本、文档字符串和任何非正式描述，通常以易于阅读的格式化面板呈现。</p>
+<p>这显示了组的全面信息，例如其完整的语句文本、文档字符串和任何非形式描述，通常以易于阅读的格式化面板呈现。</p>
 <h3 id="_5">探索代码依赖关系</h3>
 <p>要了解语句组如何连接到其他语句组，您可以使用 <code>leanexplore dependencies</code> 获取其直接依赖关系（它引用的项目）：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>leanexplore<span class="w"> </span>dependencies<span class="w"> </span>&lt;GROUP_ID&gt;
@@ -1022,7 +1022,7 @@
 <p>如果您已设置本地数据并希望使用它（例如，用于离线访问）：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>leanexplore<span class="w"> </span>chat<span class="w"> </span>--backend<span class="w"> </span><span class="nb">local</span>
 </code></pre></div>
-<h3 id="_7">理解关键聊天选项</h3>
+<h3 id="_7">关键聊天选项</h3>
 <ul>
 <li><code>--backend {api|local}</code>（别名：<code>-lb</code>）：指定 AI 工具的数据源。</li>
 <li><code>api</code>（默认）：代理查询远程 LeanExplore API。</li>
@@ -1046,8 +1046,8 @@
 <li><code>--backend {api|local}</code>（别名：<code>-b</code>）：确定服务器的工具是否将使用远程 API 或本地数据。默认为 <code>api</code>。</li>
 <li><code>--api-key TEXT</code>：（如果 <code>--backend api</code> 且未配置密钥则必需）直接为服务器提供要使用的 LeanExplore API 密钥。</li>
 </ul>
-<p><strong>注意：</strong> <code>leanexplore chat</code> 命令在内部管理此 MCP 服务器的实例。直接运行 <code>leanexplore mcp serve</code> 通常用于连接不同的 MCP 客户端或代理框架的场景。</p>
-<p>通过熟悉这些命令和工作流程，您可以有效地利用 LeanExplore CLI 进行 Lean 4 中的数学探索和开发。</p>
+<p><strong>注意：</strong> <code>leanexplore chat</code> 命令在内部维护了一个 MCP 服务器的实例。直接运行 <code>leanexplore mcp serve</code> 通常用于连接不同的 MCP 客户端或代理框架的场景。</p>
+<p>通过熟悉这些命令和工作流程，您可以有效地利用 LeanExplore CLI 在 Lean 4 中进行数学探索和开发。</p>
 
 
 
