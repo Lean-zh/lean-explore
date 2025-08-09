@@ -1,8 +1,8 @@
 # LeanExplore 文档
 
-欢迎来到 LeanExplore 文档！这里是您理解如何有效导航和使用 LeanExplore Python 包的中心枢纽。在 [GitHub](https://github.com/justincasher/lean-explore) 上查找项目。
+欢迎来到 LeanExplore 文档！这里是指引您理解和使用 LeanExplore Python 包的中心枢纽。你可以在 [GitHub](https://github.com/justincasher/lean-explore) 找到这个项目。
 
-LeanExplore 是一个 Python 包，为 Lean 4 项目提供强大的语义搜索引擎和多功能工具包。它通过语义搜索帮助 Lean 用户高效地查找代码——利用基于正式 Lean 语句及其非正式对应物嵌入的向量相似性——并探索这些语句的依赖关系以获得更深入的见解。LeanExplore 是构建自定义工具、增强证明开发工作流程以及将 Lean 的结构化知识集成到 AI 应用程序中的宝贵组件。
+LeanExplore 是一个 Python 包，为 Lean 4 项目提供强大的语义搜索引擎和多功能工具包。它通过语义搜索帮助 Lean 用户高效地查找代码——基于形式 Lean 语句及对应非形式语句的嵌入向量相似性——并探索这些语句的依赖关系以获得更深入的见解。LeanExplore 是构建自定义工具、增强证明开发工作流程以及将 Lean 的结构化知识集成到 AI 应用程序中的宝贵组件。
 
 ## 核心功能
 

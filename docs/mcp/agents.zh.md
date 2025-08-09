@@ -78,7 +78,7 @@ leanexplore mcp serve --backend api --api-key YOUR_LE_API_KEY --log-level DEBUG
 
 * `--backend {api|local}`（别名：`-b`）确定服务器工具的数据源：
   + `api`：工具将查询远程 LeanExplore API。**先决条件：** 必须配置有效的 LeanExplore API 密钥（通过 `leanexplore configure api-key`）或使用 `--api-key` 选项直接提供。此后端通常提供对最新数据的访问并卸载计算。
-  + `local`：工具将使用您本地下载的数据资产（SQLite 数据库、FAISS 索引）。**先决条件：** 您必须首先使用 `leanexplore data fetch` 下载数据工具链。此后端允许离线使用并完全控制数据版本。
+  + `local`：工具将使用您本地下载的数据资源（SQLite 数据库、FAISS 索引）。**先决条件：** 您必须首先使用 `leanexplore data fetch` 下载数据工具链。此后端允许离线使用并完全控制数据版本。
 * `--api-key TEXT`（可选）如果使用 `--backend api`，此选项允许您直接为当前服务器会话提供 LeanExplore API 密钥，覆盖任何全局配置的密钥。
 * `--log-level {DEBUG|INFO|WARNING|ERROR|CRITICAL}` 设置服务器的日志记录详细程度。使用 `DEBUG` 有助于故障排除。默认通常是 `ERROR` 或 `WARNING` 以最小化噪音。
 
@@ -101,7 +101,7 @@ LeanExplore MCP 服务器使其核心功能作为可调用的"工具"对 AI 代�
 * `range_start_line: integer` - 语句组在源文件中的起始行号。
 * `statement_text: string` - 语句组的完整规范 Lean 代码文本。
 * `docstring: string | null` - 与语句组关联的文档字符串（如果可用）。
-* `informal_description: string | null` - 非正式的、人类可读的描述（如果可用）。
+* `informal_description: string | null` - 非形式的、人类可读的描述（如果可用）。
 
 ### 工具：`search`
 

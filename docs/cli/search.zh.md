@@ -1,6 +1,6 @@
 # 使用 LeanExplore 执行搜索
 
-LeanExplore 提供灵活而强大的方式来搜索 Lean 数学语句和定义，满足不同的需求和工作流程。本指南详细介绍了如何使用远程 LeanExplore API 进行即时访问或本地数据资源进行离线功能来以编程方式执行搜索。这些方法允许您将 LeanExplore 的搜索引擎集成到您的自定义 Python 工具或分析中。
+LeanExplore 提供灵活而强大的方式来搜索 Lean 数学语句和定义，满足不同的需求和工作流程。本指南详细介绍了如何使用远程 LeanExplore API 进行即时访问，或通过本地数据资源离线功能来以编程方式执行搜索。这些方法允许您将 LeanExplore 的搜索引擎集成到您的自定义 Python 工具或分析中。
 
 ## 目录
 

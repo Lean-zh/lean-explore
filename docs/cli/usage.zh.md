@@ -1,6 +1,6 @@
 # 使用 LeanExplore CLI
 
-LeanExplore 命令行界面 (CLI)，使用 `leanexplore` 命令调用，是您与 LeanExplore 生态系统交互的主要工具。它使您能够配置设置、管理本地数据、直接搜索 LeanExplore API、使用 AI 助手探索代码，以及控制模型上下文协议 (MCP) 服务器以进行更高级的集成。
+LeanExplore 命令行界面 (CLI) 通过 `leanexplore` 命令调用，是您与 LeanExplore 生态系统交互的主要工具。它使您能够配置设置、管理本地数据、直接搜索 LeanExplore API、使用 AI 助手探索代码，以及控制模型上下文协议 (MCP) 服务器以进行更高级的集成。
 
 ## 目录
 
@@ -16,7 +16,7 @@ LeanExplore 命令行界面 (CLI)，使用 `leanexplore` 命令调用，是您�
     - [探索代码依赖关系](#探索代码依赖关系)
   - [使用 AI 聊天助手进行交互式探索](#使用-ai-聊天助手进行交互式探索)
     - [启动聊天会话](#启动聊天会话)
-    - [理解关键聊天选项](#理解关键聊天选项)
+    - [关键聊天选项](#关键聊天选项)
   - [通过 MCP 服务器与 AI 代理集成](#通过-mcp-服务器与-ai-代理集成)
     - [运行服务器](#运行服务器)
     - [关键服务器选项](#关键服务器选项)
@@ -53,7 +53,7 @@ LeanExplore 使用 API 密钥来验证对某些服务的访问。一旦设置，
 leanexplore configure api-key
 ```
 
-系统将提示您输入密钥。这通常是一次性设置。
+系统将提示您输入密钥，通常只需设置一次。
 
 **OpenAI API 密钥：** 如果您计划使用 AI 驱动的聊天功能（`leanexplore chat`），您还需要一个 OpenAI API 密钥。使用以下命令配置它：
 
@@ -79,7 +79,7 @@ leanexplore data fetch
 
 ## 查找和检查 Lean 代码（通过 API）
 
-一旦配置了您的 LeanExplore API 密钥，您就可以直接查询远程 API 来查找和检查 Lean 语句。这些命令提供对 LeanExplore 索引的丰富信息的快速访问。
+一旦配置了 LeanExplore API 密钥，您可以直接查询远程 API 来查找和检查 Lean 语句。这些命令提供对 LeanExplore 索引数据的快速访问。
 
 ### 搜索 Lean 语句
 
@@ -117,7 +117,7 @@ leanexplore get <GROUP_ID>
 leanexplore get 12345
 ```
 
-这显示了组的全面信息，例如其完整的语句文本、文档字符串和任何非正式描述，通常以易于阅读的格式化面板呈现。
+这显示了组的全面信息，例如其完整的语句文本、文档字符串和任何非形式描述，通常以易于阅读的格式化面板呈现。
 
 ### 探索代码依赖关系
 
@@ -159,7 +159,7 @@ leanexplore chat
 leanexplore chat --backend local
 ```
 
-### 理解关键聊天选项
+### 关键聊天选项
 
 * `--backend {api|local}`（别名：`-lb`）：指定 AI 工具的数据源。
   + `api`（默认）：代理查询远程 LeanExplore API。
@@ -194,6 +194,6 @@ leanexplore mcp serve --backend local
 * `--backend {api|local}`（别名：`-b`）：确定服务器的工具是否将使用远程 API 或本地数据。默认为 `api`。
 * `--api-key TEXT`：（如果 `--backend api` 且未配置密钥则必需）直接为服务器提供要使用的 LeanExplore API 密钥。
 
-**注意：** `leanexplore chat` 命令在内部管理此 MCP 服务器的实例。直接运行 `leanexplore mcp serve` 通常用于连接不同的 MCP 客户端或代理框架的场景。
+**注意：** `leanexplore chat` 命令在内部维护了一个 MCP 服务器的实例。直接运行 `leanexplore mcp serve` 通常用于连接不同的 MCP 客户端或代理框架的场景。
 
-通过熟悉这些命令和工作流程，您可以有效地利用 LeanExplore CLI 进行 Lean 4 中的数学探索和开发。
+通过熟悉这些命令和工作流程，您可以有效地利用 LeanExplore CLI 在 Lean 4 中进行数学探索和开发。

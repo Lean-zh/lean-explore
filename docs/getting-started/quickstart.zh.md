@@ -65,3 +65,22 @@ leanexplore chat
 ### 4c. 提出问题
 
 聊天界面加载并且助手准备就绪后，尝试要求它查找特定定义及其上下文，例如：
+
+```
+You: Find the formal statement for the 'fundamental theorem of calculus'
+and tell me about its main dependencies.
+```
+
+## 步骤 5：观察结果
+
+AI 助手将处理您的查询。它使用 LeanExplore API 搜索与"微积分基本定理"相关的形式陈述，识别最相关的陈述，然后查找并列出它们的主要依赖关系。您应该期待一个对话式响应，其中包括定理的 Lean 代码，以及解释和其他上下文信息，以帮助您理解其结构和在库中的连接。
+
+## 恭喜 & 下一步
+
+您现在已经成功使用 LeanExplore 执行了直接 API 搜索并与 AI 聊天助手交互！这些是利用 LeanExplore 功能的两种主要方式。
+
+从这里，您可以：
+
+* 在[使用 CLI](../cli/usage.md) 指南中深入了解所有命令行选项。
+* 在[执行搜索](../cli/search.md)部分了解使用本地数据和编程访问（本地和 API）。
+* 如果您有兴趣构建自定义 AI 代理集成，请探索 [MCP (AI 代理)](../mcp/agents.md) 文档。
