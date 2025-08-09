@@ -1,0 +1,148 @@
+site_name: LeanExplore
+site_description: LeanExplore Documentation
+site_author: Justin Asher
+site_url: https://www.leanexplore.com
+
+repo_name: justincasher/lean-explore
+repo_url: https://github.com/justincasher/lean-explore
+edit_uri: edit/main/docs/
+
+docs_dir: docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.prune
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+  language: en
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      default_language: en
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          site_name: "LeanExplore Documentation"
+        - locale: zh
+          name: 中文
+          build: true
+          site_name: "LeanExplore文档 (zh)"
+          nav_translations:
+            Home: 首页
+            Quickstart Guide: 快速入门指南
+            Using the CLI: CLI使用
+            Performing Searches: 执行搜索
+            MCP (AI Agents): MCP(AI智能体)
+            API Reference: API参考
+            client: 客户端
+            cli: 命令行工具
+            agent: 智能体
+            config_utils: 配置工具
+            data_commands: 数据命令
+            main: 主程序
+            defaults: 默认设置
+            local: 本地服务
+            search: 搜索
+            service: 服务
+            mcp: 多智能体协作
+            app: 应用
+            server: 服务器
+            tools: 工具集
+            shared: 共享模块
+            models: 模型
+            models.api: 模型API
+            models.db: 模型数据库
+            Contributing: 贡献指南
+            Development Setup: 开发环境
+            Code Style: 代码规范
+            Testing: 测试指南
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/justincasher
+
+nav:
+  - Home: index.md
+  - Quickstart Guide: getting-started/quickstart.md
+  - Using the CLI: cli/usage.md
+  - Performing Searches: cli/search.md
+  - MCP (AI Agents): mcp/agents.md
+  # - API Reference:
+  #   - client: api/api/client.md
+  #   - cli:
+  #     - agent: api/cli/agent.md
+  #     - config_utils: api/cli/config_utils.md
+  #     - data_commands: api/cli/data_commands.md
+  #     - main: api/cli/main.md
+  #   - defaults:
+  #     - defaults: api/defaults/defaults.md
+  #   - local:
+  #     - search: api/local/search.md
+  #     - service: api/local/service.md
+  #   - mcp:
+  #     - app: api/mcp/app.md
+  #     - server: api/mcp/server.md
+  #     - tools: api/mcp/tools.md
+  #   - shared:
+  #     - models: api/shared/models.md
+  #     - models.api: api/shared/models.api.md
+  #     - models.db: api/shared/models.db.md
