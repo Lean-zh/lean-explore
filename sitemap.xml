@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://www.leanexplore.com/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/cli/search/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/cli/search/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/cli/search/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/cli/usage/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/cli/usage/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/cli/usage/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/getting-started/quickstart/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/getting-started/quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/getting-started/quickstart/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/mcp/agents/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/mcp/agents/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/mcp/agents/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/zh/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/zh/cli/search/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/cli/search/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/cli/search/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/zh/cli/usage/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/cli/usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/cli/usage/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/zh/getting-started/quickstart/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/getting-started/quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/getting-started/quickstart/"/>
+    </url>
+    <url>
+        <loc>https://www.leanexplore.com/zh/mcp/agents/</loc>
+        <lastmod>2025-08-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.leanexplore.com/zh/mcp/agents/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.leanexplore.com/mcp/agents/"/>
+    </url>
+</urlset>
